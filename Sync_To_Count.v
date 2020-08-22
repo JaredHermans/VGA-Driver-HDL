@@ -1,7 +1,14 @@
-//This module will take incoming horizontal and vertical sync pulses and
-//create Row and Column counters based on these syncs.
-//It will align the Row/Col counters to the output sync pulses.
-//Useful for any module that need to keep track of which row/col position we are on in the middle of a frame
+//////////////////////////////////////////////////////////////////////
+// Jared Hermans
+//////////////////////////////////////////////////////////////////////
+// Description: This module will take incoming horizontal and vertical
+//              sync pulses and create Row and Column counters based on
+//              these syncs. It will align the Row/Col counters to the 
+//              output sync pulses. Useful for any module that need to 
+//              keep track of which row/col position we are on in the 
+//              middle of a frame
+//  
+//////////////////////////////////////////////////////////////////////
 
 module Sync_To_Count #(
     parameter           TOTAL_COLS  = 800,
