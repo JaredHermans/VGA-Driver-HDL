@@ -9,8 +9,8 @@ generator, and VGA Sync Porch.
 
 **Test_Pattern_Gen** module generates 6 different patterns on the VGA display simultaneously and value of i_Pattern determines which one is displayed.
 
-**VGA_Sync_Pulses** generates HSync and VSync without the front porch or back porch for VGA driver.
+**VGA_Sync_Pulses** module generates HSync and VSync without the front porch or back porch for VGA driver.
 
-**Sync_To_Count** takes HSync and VSync as inputs and outputs them along with a vertical and horizontal counter to keep track of where you are in the frame.
+**Sync_To_Count** module takes HSync and VSync as inputs and outputs them along with a vertical and horizontal counter to keep track of where you are in the frame.
 
-**VGA_Sync_Porch** modifies HSync and VSync to include the front porch and back porch.
+**VGA_Sync_Porch** module modifies HSync and VSync to include the front porch and back porch.
