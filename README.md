@@ -1,4 +1,7 @@
 # VGA-Driver-HDL
 
-Test
-Testing branch1
+Project outputs image test patterns to a VGA monitor. The test patterns are selectable by the computer keybord which communitates to the Go Board via Putty and UART. 
+ASCI values of the keyboard strokes are displayed on the 7-Segment displays in hex.
+
+VGA_Test_Patterns_Top is the top level module that calles the UART Reciever, UART Transmitter, Binary to 7 segment converter, Sync pulse generator, test pattern
+generator, and VGA Sync Porch. 
