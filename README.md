@@ -5,7 +5,8 @@ COM port (UART). ASCI values of the keyboard strokes are displayed on the 7-Segm
 **VGA_Test_Patterns_Top** is the top level module that calles the UART Reciever, UART Transmitter, Binary to 7 segment converter, Sync pulse generator, test pattern
 generator, and VGA Sync Porch. 
 
-**VGA_Test_Patterns_TB** is the testbench that verifies VGA_Sync_Pulses, Test_Patter_Gen, Sync_To_Count, and VGA_Sync_Porch. Modelsim waveform image also shown.
+**VGA_Test_Patterns_TB** is the testbench that verifies VGA_Sync_Pulses, Test_Patter_Gen, Sync_To_Count, and VGA_Sync_Porch. Modelsim waveform image shows 
+w_RX_Byte = 00110111 (4h'37) after transmission is complete which passed the test.
 
 **Test_Pattern_Gen** module generates 6 different patterns on the VGA display simultaneously and value of i_Pattern determines which one is displayed.
 
