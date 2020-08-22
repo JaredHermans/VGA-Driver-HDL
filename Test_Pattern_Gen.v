@@ -1,19 +1,20 @@
-//This module is designed for 640  x 480 with a 25 MHz input clock
-//All test patterns are being generated all the time. This makes use of one
-//of the benefits of FPGAs, they are highly parallelizable. Many different
-//things can all be happening at the same time. In this case, there are several
-//test patterns that are being generated simultanously. The actual choice of 
-//which test pattern gets displayed is done via the i_Pattern signal, which is
-//an input to a case statement.
-
-//Available patterns:
-    //Pattern 0: Disables the Test Pattern Generator
-    //Pattern 1: All Red
-    //Pattern 2: All Green
-    //Pattern 3: All Blue
-    //Pattern 4: Checkerboard white/black
-    //Pattern 5: Color Bars
-    //Pattern 6: White Box with Border (2 pixels)
+////////////////////////////////////////////////////////////////////////////////////////////
+// Jared Hermans
+////////////////////////////////////////////////////////////////////////////////////////////
+// Description: This module is designed for 640  x 480 with a 25 MHz input clock.
+//              All test patterns are being generated all the time. The actual choice of 
+//              which test pattern gets displayed is done via the i_Pattern signal, which is
+//              an input to a case statement.
+//
+//  Available patterns:
+//          Pattern 0: Disables the Test Pattern Generator
+//          Pattern 1: All Red
+//          Pattern 2: All Green
+//          Pattern 3: All Blue
+//          Pattern 4: Checkerboard white/black
+//          Pattern 5: Color Bars
+//          Pattern 6: White Box with Border (2 pixels) 
+///////////////////////////////////////////////////////////////////////////////////////////
 
 module Test_Pattern_Gen #(
     parameter           VIDEO_WIDTH     = 3,
