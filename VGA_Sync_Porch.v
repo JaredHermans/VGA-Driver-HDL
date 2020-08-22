@@ -1,11 +1,11 @@
-//The purpose of this module is to modify the input HSync and VSync signals to
-//include some time for what is called the Front and Back porch. The front and 
-//back porch of a VGA interfase used to have more meaning when a monitor
-//actually used a Cathode Ray Tube (CRT) to draw an image on the screen. New 
-//standards like DVI and HDMI which are meant for digital signals have
-//removed this notion of the front and back porches. Remember that VGA is an analog
-//interface.
-//This module is designed for 640 x 480 with a 25 MHz input clock
+/////////////////////////////////////////////////////////////////////////////////////////
+// Jared Hermans
+/////////////////////////////////////////////////////////////////////////////////////////
+// Description: The purpose of this module is to modify the input HSync and VSync signals
+//              to include some time for what is called the Front and Back porch.
+//              This module is designed for 640 x 480 with a 25 MHz input clock
+//  
+////////////////////////////////////////////////////////////////////////////////////////
 
 module VGA_Sync_Porch #(
     parameter                       VIDEO_WIDTH = 3,
