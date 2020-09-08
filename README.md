@@ -14,3 +14,5 @@ generator, and VGA Sync Porch.
 **Sync_To_Count** module takes HSync and VSync as inputs and outputs them along with a vertical and horizontal counter to keep track of where you are in the frame.
 
 **VGA_Sync_Porch** module modifies HSync and VSync to include the front porch and back porch.
+
+**timing_constraints.sdc** and **Go_Board_Constraints.pcf**  are the timing constraints and pinout constraints of the FPGA.
