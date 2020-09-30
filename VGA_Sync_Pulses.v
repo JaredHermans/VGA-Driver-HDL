@@ -5,7 +5,6 @@
 //              for VGA driver.
 //  
 ////////////////////////////////////////////////////////////////////////////////////////
-//module generates HSync and VSync without the front porch or back porch for VGA driver.
 
 module VGA_Sync_Pulses #(
     parameter TOTAL_COLS    = 800,
